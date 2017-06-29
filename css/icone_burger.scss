@@ -1,0 +1,291 @@
+
+nav{
+  position: absolute;
+  width: 100%;
+}
+
+nav ul li{
+  list-style-position: inside;
+  list-style-type: none;
+  padding: 10px;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+.title_a{
+  font-family: "Brandon Grotesque Black", sans-serif;
+  width: auto;
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  margin: -2px;
+  display: block;
+  vertical-align: middle;
+  height: 68px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  font-weight: 900;
+  border-bottom:0;
+}
+
+.title_a:hover{
+  color: #F58C8C;
+  transition: 0.5s;
+}
+.menu_burger{
+  display: block;
+}
+
+
+#burger{
+  z-index: 3200;
+  position: fixed;
+  background-color: rgba( 245, 140, 140,.7);
+  width: 110%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border:0;
+  transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transition: transform 1s ease;
+}
+
+
+#burger-content{
+  position: relative;
+  top: 30%;
+  left: 0;
+  width: 100%;
+}
+
+
+#burger-button{
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid transparent;
+  max-width: 35px;
+  min-width: 35px;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 3500;
+}
+
+img #burger-button{
+  display: block;
+  cursor: pointer;
+  width: 150%;
+  height: 150%;
+  position: fixed;
+  right: 25%;
+}
+
+#burger-overlay.burger-actif{
+  display: block;
+}
+
+#burger.burger-actif {
+  transform: translateX(3%);
+  transition: transform 1s ease;
+}
+
+.try_opacity{
+  width: 40%;
+  position: relative;
+  left: 30%;
+  top:0;
+  height:300px;
+}
+
+article{
+  width: 50%;
+  left:0;
+  position: absolute;
+  height: auto;
+}
+
+@media screen and (max-width: 480px) {
+
+  #burger-content{
+    position: relative;
+    top: 30%;
+    left: 0;
+  }
+
+  .title_a{
+    font-size: 25px;
+  }
+}
+
+
+*{box-sizing:border-box;}
+div.deco{float:left;margin-right:30px;&:last-child{margin-right:0;}}
+div#container{height:70px;background-color:black;padding:10px 10px;}
+/* LOGO PARAMS FOR E */
+$background-color:rgba(255,255,255,0);
+$border-color:rgba(255,255,255,1);
+$picto-color:rgba(255,255,255,1);
+$button-radius:0px;
+$bar-radius:0px;
+
+.logoMenu.e{
+  z-index: 10000;
+  position:relative;
+  height:52px;
+  width:52px;
+  cursor:pointer;
+  border:3px solid $border-color;
+  background:$background-color;
+  border-radius:$button-radius;
+  div.logo{
+    position:absolute;
+    top:21px;
+    margin:auto;
+    left:0px;
+    right:0px;
+    height:5px;
+    width:30px;
+    background:$picto-color;
+    border-radius:$bar-radius;
+    z-index:5;
+    animation: e-midbar-r 1s linear 0s 1 normal forwards;
+    -webkit-animation: e-midbar-r 1s linear 0s 1 normal forwards;
+    &:before{
+      display:block;
+      content:"";
+      position:absolute;
+      bottom:10px;
+      height:5px;
+      width:30px;
+      background:$picto-color;
+      border-radius:$bar-radius;
+      z-index:10;
+      animation: e-topbar-r 1s linear 0s 1 normal forwards;
+      -webkit-animation: e-topbar-r 1s linear 0s 1 normal forwards;
+    }
+    &:after{
+      display:block;
+      content:"";
+      position:absolute;
+      top:10px;
+      left:0;
+      height:5px;
+      width:30px;
+      background:$picto-color;
+      border-radius:$bar-radius;
+      z-index:10;
+      animation: e-botbar-r 1s linear 0s 1 normal forwards;
+      -webkit-animation: e-botbar-r 1s linear 0s 1 normal forwards;
+    }
+  }
+  &:hover{
+    background-color:opacify($background-color,0.2);
+  }
+  &.animate{
+    div{
+      animation: e-midbar 1s linear 0s 1 normal forwards;
+      -webkit-animation: e-midbar 1s linear 0s 1 normal forwards;
+      &:before{
+        animation: e-topbar 1s linear 0s 1 normal forwards;
+        -webkit-animation: e-topbar 1s linear 0s 1 normal forwards;
+      }
+      &:after{
+        animation: e-botbar 1s linear 0s 1 normal forwards;
+        -webkit-animation: e-botbar 1s linear 0s 1 normal forwards;
+      }
+    }
+  }
+}
+
+@keyframes e-topbar {
+  0%   {bottom:10px;}
+  50%  {bottom:0px;}
+  75%  {bottom:0px;}
+  100% {bottom:0px;}
+}
+
+@-webkit-keyframes e-topbar {
+  0%   {bottom:10px;}
+  50%  {bottom:0px;}
+  75%  {bottom:0px;}
+  100% {bottom:0px;}
+}
+
+@keyframes e-topbar-r {
+  0%   {bottom:0px;}
+  25%  {bottom:0px;}
+  50%  {bottom:0px;}
+  100% {bottom:10px;}
+}
+
+@-webkit-keyframes e-topbar-r {
+  0%   {bottom:0px;}
+  25%  {bottom:0px;}
+  50%  {bottom:0px;}
+  100% {bottom:10px;}
+}
+
+@keyframes e-midbar {
+  0%   {background-color:$picto-color;transform:rotate(0deg);}
+  50%  {background-color:$picto-color;transform:rotate(0deg);}
+  75%  {background-color:transparent;transform:rotate(45deg);}
+  100% {background-color:transparent;transform:rotate(45deg);}
+}
+
+@-webkit-keyframes e-midbar {
+  0%   {background-color:$picto-color;transform:rotate(0deg);}
+  50%  {background-color:$picto-color;transform:rotate(0deg);}
+  75%  {background-color:transparent;transform:rotate(45deg);}
+  100% {background-color:transparent;transform:rotate(45deg);}
+}
+
+@keyframes e-midbar-r {
+  0%   {background-color:transparent;transform:rotate(45deg);}
+  25%  {background-color:transparent;transform:rotate(45deg);}
+  50%  {background-color:$picto-color;transform:rotate(0deg);}
+  100% {background-color:$picto-color;transform:rotate(0deg);}
+}
+
+@-webkit-keyframes e-midbar-r {
+  0%   {background-color:transparent;transform:rotate(45deg);}
+  25%  {background-color:transparent;transform:rotate(45deg);}
+  50%  {background-color:$picto-color;transform:rotate(0deg);}
+  100% {background-color:$picto-color;transform:rotate(0deg);}
+}
+
+@keyframes e-botbar {
+  0%   {top:10px;transform:rotate(0deg);}
+  50%  {top:0px;transform:rotate(0deg);}
+  75%  {top:0px;transform:rotate(0deg);}
+  100% {top:0px;transform:rotate(90deg);}
+}
+
+@-webkit-keyframes e-botbar {
+  0%   {top:10px;transform:rotate(0deg);}
+  50%  {top:0px;transform:rotate(0deg);}
+  75%  {top:0px;transform:rotate(0deg);}
+  100% {top:0px;transform:rotate(90deg);}
+}
+
+@keyframes e-botbar-r {
+  0%   {top:0px;transform:rotate(90deg);}
+  25%  {top:0px;transform:rotate(0deg);}
+  50%  {top:0px;transform:rotate(0deg);}
+  100% {top:10px;transform:rotate(0deg);}
+}
+
+@-webkit-keyframes e-botbar-r {
+  0%   {top:0px;transform:rotate(90deg);}
+  25%  {top:0px;transform:rotate(0deg);}
+  50%  {top:0px;transform:rotate(0deg);}
+  100% {top:10px;transform:rotate(0deg);}
+}

@@ -1,0 +1,64 @@
+form{
+  width: 100%;
+  position: relative;
+  left:5%;
+  top: 10%;
+}
+
+input{
+
+}
+
+input[type=radio]{
+  margin-left: 10%;
+}
+
+input[type=number],[type=text],[type=email],[type=tel]{
+  margin-left: 10%;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+  border: 0;
+}
+
+.civilite{
+  width: 10%;
+  position: relative;
+  left: 10%;
+  font-size: 16px;
+  font-family: "Brandon Grotesque Thin", "Brandon Grotesque Bold", "Brandon Grotesque Light", "Brandon Grotesque Medium", "Brandon Grotesque Regular", "Brandon Grotesque Black", sans-serif;
+}
+
+select{
+  margin-left: 10%;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+  border: 0;
+}
+
+label{
+  width: auto;
+  color: #ffffff;
+}
+
+@media only screen and(max-width: 480px) {
+
+  input[type="number"],select, [type="text"],[type="email"], [type='tel']{
+    margin: 0;
+    width: 75%;
+  }
+
+
+}
+
+
+@media only screen and(max-width: 480px) {
+
+  input[type="number"],select, [type="text"],[type="email"], [type='tel']{
+    margin: 0;
+    width: 75%;
+  }
+
+
+}

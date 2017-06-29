@@ -1,0 +1,69 @@
+form.bouton_stripe{
+  margin: 0;
+}
+
+.securite_stripe{
+
+}
+
+.paiement_complet_div{
+ width: 50%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.securite_stripe p{
+  font-size: 18px;
+  color: #ffffff;
+  width: 80%;
+  margin-left: 10%;
+  font-family:"Brandon Grotesque Bold","Brandon Grotesque Medium", sans-serif;
+
+}
+
+.securite_stripe img{
+ width: 80%;
+  height:auto;
+  margin:10% 10%;
+}
+
+.securite_stripe_adresse{
+  margin-top:10%;
+  margin-left:10%;
+  width: 80%;
+  color: #ffffff;
+  font-family:"Brandon Grotesque Bold","Brandon Grotesque Medium", sans-serif;
+
+}
+
+.securite_stripe_adresse p{
+  font-size: 12px;
+  font-family: "Brandon Grotesque Thin",sans-serif;
+  margin-bottom: 10px;
+
+}
+
+
+.bouton_stripe{
+  border: 0;
+}
+.securite_stripe_adresse address{
+  font-size: 18px;
+}
+
+.stripe-button-el, .stripe-button{
+  border:0;
+}
+
+.payment-errors{
+  border: 0;
+}
+
+
+
+@media only screen and(max-width: 480px) {
+  .securite_stripe_adresse{
+    margin-top: 45%;
+  }
+
+}

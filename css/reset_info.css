@@ -1,0 +1,12 @@
+#clearer {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: -13px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 7pt;
+  cursor: pointer; }
+
+/*# sourceMappingURL=reset_info.css.map */

@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import "title";
+@import "formulaire";
+@import "reset_info";
+@import "icone_burger";
+@import "stripe";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background:url("../img-content/noir.jpg") top center no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: "Brandon Grotesque Thin", "Brandon Grotesque Bold", "Brandon Grotesque Light", "Brandon Grotesque Medium", "Brandon Grotesque Regular", "Brandon Grotesque Black", sans-serif;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---overlay ---*/
+.overlay_transparent{
+  width: 100%;
+  position: fixed;
+  z-index: -10;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+
+}
+
+/*----page don--*/
+
+.h1_page_don{
+  width: auto;
+  font-size: 41px;
+  color: #ffffff;
+  text-align: center;
+  line-height: normal;
+  font-weight: 900;
+  margin-top: 10%;
+  font-family: "Brandon Grotesque Black", sans-serif;
+}
+
+#dons{
+  width: 80%;
+  height: auto;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+
+.don_parrainage{
+  background-color: rgba(161,109,113,0.9);
+  border-right:2px solid #F58C8C;
+  box-shadow: 1px  0 #F58C8C;
+  padding-bottom: 15px;
+  width: 33.33%;
+  height:auto;
+  h2{
+    text-transform: uppercase;
+    font-size:25px;
+    width: 100%;
+    background-color: #DE9DA0;
+    height: 100px;
+    color: #ffffff;
+    font-family: "Brandon Grotesque Black", sans-serif;
+  }
+  .span1{
+    font-size: 50px;
+    border: 3px solid #F58C8C;
+    padding:30px;
+  }
+}
+
+#don{
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+hr{
+  width: 80%;
+  text-align: center;
+  height:5px;
+  background-color: #F58C8C;
+  border: 0;
+  margin: 0 auto;
+}
+
+.hr_parrainage{
+  width: 80%;
+  text-align: center;
+  height:5px;
+  background-color: #ab6d71;
+  border: 0;
+}
+
+h3{
+  font-size: 21px;
+  line-height: 1.5em;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+  font-family: "Brandon Grotesque Medium",sans-serif;
+}
+
+
+
+.informations_personnel{
+  background-color: rgba(245,140,140,0.9);
+  width: 33.33%;
+  height:auto;
+  padding-bottom: 15px;
+  margin-left: 5%;
+  border-right:2px solid #ab6d71;
+  box-shadow: 1px 0 #ab6d71;
+  h2{
+    text-transform: uppercase;
+    font-size:25px;
+    width: 100%;
+    background-color: #ab6d71;
+    height: 100px;
+    color: #ffffff;
+    font-family: "Brandon Grotesque Black", sans-serif;
+  }
+  .span2{
+    font-size: 50px;
+    border: 3px solid #ab6d71;
+    padding:30px;
+  }
+}
+
+#corrdonnees{
+  width: 100%;
+
+}
+
+.click_et_c_donner{
+  display: flex;
+  flex-direction: row;
+}
+
+.click_et_c_donner form{
+  margin: 0% 5%;
+}
+
+#api_stripe{
+  background-color: rgba(222,158,161, 0.9);
+  width: 33.33%;
+  height:auto;
+  padding-bottom: 15px;
+  margin-left: 5%;
+  border-right:2px solid #ab6d71;
+  box-shadow: 1px 0 #f58c8c;
+  h2{
+    text-transform: uppercase;
+    font-size:25px;
+    width: 100%;
+    background-color: #f58c8c;
+    height: 100px;
+    color: #ffffff;
+    font-family: "Brandon Grotesque Black", sans-serif;
+  }
+  .span3{
+    font-size: 50px;
+    border: 3px solid #ab6d71;
+    padding:30px;
+  }
+}
+
+.payment-errors{
+  border: 0;
+}
+
+.paiement_complet{
+  color:red;
+}
+
+@media only screen and(max-width: 480px) {
+
+  #dons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:auto;
+  }
+
+  .don_parrainage{
+    width: 90%;
+    margin:0 5%;
+  }
+
+  .informations_personnel{
+  width: 90%;
+    margin: 100px 5%;
+  }
+
+  #api_stripe{
+    width: 90%;
+    margin: 100px 5%;
+  }
+
+  hr{
+    margin: 0 auto;
+  }
+
+  form.bouton_stripe{
+    margin: 0 15%;
+  }
+
+  body{
+    background-size:cover;
+  }
+}

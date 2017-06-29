@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,eAAe;EACb,MAAM,EAAE,CAAC;;AAGX,iBAAiB;EACf,KAAK,EAAC,GAAG",
+"sources": ["stripe.scss"],
+"names": [],
+"file": "stripe.css"
+}

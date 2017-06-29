@@ -1,0 +1,648 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+h2 {
+  font-size: 25px;
+  font-family: "Brandon Grotesque Black", sans-serif; }
+
+span {
+  font-size: 50px;
+  border: 1px solid #F58C8C;
+  padding: 30px; }
+
+h3 {
+  font-size: 18px;
+  font-family: "Brandon Grotesque Medium", sans-serif; }
+
+form {
+  width: 100%;
+  position: relative;
+  left: 5%;
+  top: 10%; }
+
+input[type=radio] {
+  margin-left: 10%; }
+
+input[type=number], [type=text], [type=email], [type=tel] {
+  margin-left: 10%;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+  border: 0; }
+
+.civilite {
+  width: 10%;
+  position: relative;
+  left: 10%;
+  font-size: 16px;
+  font-family: "Brandon Grotesque Thin", "Brandon Grotesque Bold", "Brandon Grotesque Light", "Brandon Grotesque Medium", "Brandon Grotesque Regular", "Brandon Grotesque Black", sans-serif; }
+
+select {
+  margin-left: 10%;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+  border: 0; }
+
+label {
+  width: auto;
+  color: #ffffff; }
+
+@media only screen and (max-width: 480px) {
+  input[type="number"], select, [type="text"], [type="email"], [type='tel'] {
+    margin: 0;
+    width: 75%; } }
+@media only screen and (max-width: 480px) {
+  input[type="number"], select, [type="text"], [type="email"], [type='tel'] {
+    margin: 0;
+    width: 75%; } }
+#clearer {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: -13px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 7pt;
+  cursor: pointer; }
+
+nav {
+  position: absolute;
+  width: 100%; }
+
+nav ul li {
+  list-style-position: inside;
+  list-style-type: none;
+  padding: 10px; }
+
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+.title_a {
+  font-family: "Brandon Grotesque Black", sans-serif;
+  width: auto;
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  margin: -2px;
+  display: block;
+  vertical-align: middle;
+  height: 68px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  font-weight: 900;
+  border-bottom: 0; }
+
+.title_a:hover {
+  color: #F58C8C;
+  transition: 0.5s; }
+
+.menu_burger {
+  display: block; }
+
+#burger {
+  z-index: 3200;
+  position: fixed;
+  background-color: rgba(245, 140, 140, 0.7);
+  width: 110%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transition: transform 1s ease; }
+
+#burger-content {
+  position: relative;
+  top: 30%;
+  left: 0;
+  width: 100%; }
+
+#burger-button {
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid transparent;
+  max-width: 35px;
+  min-width: 35px;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 3500; }
+
+img #burger-button {
+  display: block;
+  cursor: pointer;
+  width: 150%;
+  height: 150%;
+  position: fixed;
+  right: 25%; }
+
+#burger-overlay.burger-actif {
+  display: block; }
+
+#burger.burger-actif {
+  transform: translateX(3%);
+  transition: transform 1s ease; }
+
+.try_opacity {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  top: 0;
+  height: 300px; }
+
+article {
+  width: 50%;
+  left: 0;
+  position: absolute;
+  height: auto; }
+
+@media screen and (max-width: 480px) {
+  #burger-content {
+    position: relative;
+    top: 30%;
+    left: 0; }
+
+  .title_a {
+    font-size: 25px; } }
+* {
+  box-sizing: border-box; }
+
+div.deco {
+  float: left;
+  margin-right: 30px; }
+  div.deco:last-child {
+    margin-right: 0; }
+
+div#container {
+  height: 70px;
+  background-color: black;
+  padding: 10px 10px; }
+
+/* LOGO PARAMS FOR E */
+.logoMenu.e {
+  z-index: 10000;
+  position: relative;
+  height: 52px;
+  width: 52px;
+  cursor: pointer;
+  border: 3px solid white;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 0px; }
+  .logoMenu.e div.logo {
+    position: absolute;
+    top: 21px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    height: 5px;
+    width: 30px;
+    background: white;
+    border-radius: 0px;
+    z-index: 5;
+    animation: e-midbar-r 1s linear 0s 1 normal forwards;
+    -webkit-animation: e-midbar-r 1s linear 0s 1 normal forwards; }
+    .logoMenu.e div.logo:before {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      height: 5px;
+      width: 30px;
+      background: white;
+      border-radius: 0px;
+      z-index: 10;
+      animation: e-topbar-r 1s linear 0s 1 normal forwards;
+      -webkit-animation: e-topbar-r 1s linear 0s 1 normal forwards; }
+    .logoMenu.e div.logo:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 5px;
+      width: 30px;
+      background: white;
+      border-radius: 0px;
+      z-index: 10;
+      animation: e-botbar-r 1s linear 0s 1 normal forwards;
+      -webkit-animation: e-botbar-r 1s linear 0s 1 normal forwards; }
+  .logoMenu.e:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .logoMenu.e.animate div {
+    animation: e-midbar 1s linear 0s 1 normal forwards;
+    -webkit-animation: e-midbar 1s linear 0s 1 normal forwards; }
+    .logoMenu.e.animate div:before {
+      animation: e-topbar 1s linear 0s 1 normal forwards;
+      -webkit-animation: e-topbar 1s linear 0s 1 normal forwards; }
+    .logoMenu.e.animate div:after {
+      animation: e-botbar 1s linear 0s 1 normal forwards;
+      -webkit-animation: e-botbar 1s linear 0s 1 normal forwards; }
+
+@keyframes e-topbar {
+  0% {
+    bottom: 10px; }
+  50% {
+    bottom: 0px; }
+  75% {
+    bottom: 0px; }
+  100% {
+    bottom: 0px; } }
+@-webkit-keyframes e-topbar {
+  0% {
+    bottom: 10px; }
+  50% {
+    bottom: 0px; }
+  75% {
+    bottom: 0px; }
+  100% {
+    bottom: 0px; } }
+@keyframes e-topbar-r {
+  0% {
+    bottom: 0px; }
+  25% {
+    bottom: 0px; }
+  50% {
+    bottom: 0px; }
+  100% {
+    bottom: 10px; } }
+@-webkit-keyframes e-topbar-r {
+  0% {
+    bottom: 0px; }
+  25% {
+    bottom: 0px; }
+  50% {
+    bottom: 0px; }
+  100% {
+    bottom: 10px; } }
+@keyframes e-midbar {
+  0% {
+    background-color: white;
+    transform: rotate(0deg); }
+  50% {
+    background-color: white;
+    transform: rotate(0deg); }
+  75% {
+    background-color: transparent;
+    transform: rotate(45deg); }
+  100% {
+    background-color: transparent;
+    transform: rotate(45deg); } }
+@-webkit-keyframes e-midbar {
+  0% {
+    background-color: white;
+    transform: rotate(0deg); }
+  50% {
+    background-color: white;
+    transform: rotate(0deg); }
+  75% {
+    background-color: transparent;
+    transform: rotate(45deg); }
+  100% {
+    background-color: transparent;
+    transform: rotate(45deg); } }
+@keyframes e-midbar-r {
+  0% {
+    background-color: transparent;
+    transform: rotate(45deg); }
+  25% {
+    background-color: transparent;
+    transform: rotate(45deg); }
+  50% {
+    background-color: white;
+    transform: rotate(0deg); }
+  100% {
+    background-color: white;
+    transform: rotate(0deg); } }
+@-webkit-keyframes e-midbar-r {
+  0% {
+    background-color: transparent;
+    transform: rotate(45deg); }
+  25% {
+    background-color: transparent;
+    transform: rotate(45deg); }
+  50% {
+    background-color: white;
+    transform: rotate(0deg); }
+  100% {
+    background-color: white;
+    transform: rotate(0deg); } }
+@keyframes e-botbar {
+  0% {
+    top: 10px;
+    transform: rotate(0deg); }
+  50% {
+    top: 0px;
+    transform: rotate(0deg); }
+  75% {
+    top: 0px;
+    transform: rotate(0deg); }
+  100% {
+    top: 0px;
+    transform: rotate(90deg); } }
+@-webkit-keyframes e-botbar {
+  0% {
+    top: 10px;
+    transform: rotate(0deg); }
+  50% {
+    top: 0px;
+    transform: rotate(0deg); }
+  75% {
+    top: 0px;
+    transform: rotate(0deg); }
+  100% {
+    top: 0px;
+    transform: rotate(90deg); } }
+@keyframes e-botbar-r {
+  0% {
+    top: 0px;
+    transform: rotate(90deg); }
+  25% {
+    top: 0px;
+    transform: rotate(0deg); }
+  50% {
+    top: 0px;
+    transform: rotate(0deg); }
+  100% {
+    top: 10px;
+    transform: rotate(0deg); } }
+@-webkit-keyframes e-botbar-r {
+  0% {
+    top: 0px;
+    transform: rotate(90deg); }
+  25% {
+    top: 0px;
+    transform: rotate(0deg); }
+  50% {
+    top: 0px;
+    transform: rotate(0deg); }
+  100% {
+    top: 10px;
+    transform: rotate(0deg); } }
+form.bouton_stripe {
+  margin: 0; }
+
+.paiement_complet_div {
+  width: 50%;
+  height: 400px;
+  margin: 0 auto; }
+
+.securite_stripe p {
+  font-size: 18px;
+  color: #ffffff;
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Brandon Grotesque Bold","Brandon Grotesque Medium", sans-serif; }
+
+.securite_stripe img {
+  width: 80%;
+  height: auto;
+  margin: 10% 10%; }
+
+.securite_stripe_adresse {
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 80%;
+  color: #ffffff;
+  font-family: "Brandon Grotesque Bold","Brandon Grotesque Medium", sans-serif; }
+
+.securite_stripe_adresse p {
+  font-size: 12px;
+  font-family: "Brandon Grotesque Thin",sans-serif;
+  margin-bottom: 10px; }
+
+.bouton_stripe {
+  border: 0; }
+
+.securite_stripe_adresse address {
+  font-size: 18px; }
+
+.stripe-button-el, .stripe-button {
+  border: 0; }
+
+.payment-errors {
+  border: 0; }
+
+@media only screen and (max-width: 480px) {
+  .securite_stripe_adresse {
+    margin-top: 45%; } }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  background: url("../img-content/noir.jpg") top center no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: "Brandon Grotesque Thin", "Brandon Grotesque Bold", "Brandon Grotesque Light", "Brandon Grotesque Medium", "Brandon Grotesque Regular", "Brandon Grotesque Black", sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*---overlay ---*/
+.overlay_transparent {
+  width: 100%;
+  position: fixed;
+  z-index: -10;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+/*----page don--*/
+.h1_page_don {
+  width: auto;
+  font-size: 41px;
+  color: #ffffff;
+  text-align: center;
+  line-height: normal;
+  font-weight: 900;
+  margin-top: 10%;
+  font-family: "Brandon Grotesque Black", sans-serif; }
+
+#dons {
+  width: 80%;
+  height: auto;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start; }
+
+.don_parrainage {
+  background-color: rgba(161, 109, 113, 0.9);
+  border-right: 2px solid #F58C8C;
+  box-shadow: 1px  0 #F58C8C;
+  padding-bottom: 15px;
+  width: 33.33%;
+  height: auto; }
+  .don_parrainage h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 100%;
+    background-color: #DE9DA0;
+    height: 100px;
+    color: #ffffff;
+    font-family: "Brandon Grotesque Black", sans-serif; }
+  .don_parrainage .span1 {
+    font-size: 50px;
+    border: 3px solid #F58C8C;
+    padding: 30px; }
+
+#don {
+  width: 100%;
+  margin-bottom: 36px; }
+
+hr {
+  width: 80%;
+  text-align: center;
+  height: 5px;
+  background-color: #F58C8C;
+  border: 0;
+  margin: 0 auto; }
+
+.hr_parrainage {
+  width: 80%;
+  text-align: center;
+  height: 5px;
+  background-color: #ab6d71;
+  border: 0; }
+
+h3 {
+  font-size: 21px;
+  line-height: 1.5em;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+  font-family: "Brandon Grotesque Medium",sans-serif; }
+
+.informations_personnel {
+  background-color: rgba(245, 140, 140, 0.9);
+  width: 33.33%;
+  height: auto;
+  padding-bottom: 15px;
+  margin-left: 5%;
+  border-right: 2px solid #ab6d71;
+  box-shadow: 1px 0 #ab6d71; }
+  .informations_personnel h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 100%;
+    background-color: #ab6d71;
+    height: 100px;
+    color: #ffffff;
+    font-family: "Brandon Grotesque Black", sans-serif; }
+  .informations_personnel .span2 {
+    font-size: 50px;
+    border: 3px solid #ab6d71;
+    padding: 30px; }
+
+#corrdonnees {
+  width: 100%; }
+
+.click_et_c_donner {
+  display: flex;
+  flex-direction: row; }
+
+.click_et_c_donner form {
+  margin: 0% 5%; }
+
+#api_stripe {
+  background-color: rgba(222, 158, 161, 0.9);
+  width: 33.33%;
+  height: auto;
+  padding-bottom: 15px;
+  margin-left: 5%;
+  border-right: 2px solid #ab6d71;
+  box-shadow: 1px 0 #f58c8c; }
+  #api_stripe h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 100%;
+    background-color: #f58c8c;
+    height: 100px;
+    color: #ffffff;
+    font-family: "Brandon Grotesque Black", sans-serif; }
+  #api_stripe .span3 {
+    font-size: 50px;
+    border: 3px solid #ab6d71;
+    padding: 30px; }
+
+.payment-errors {
+  border: 0; }
+
+.paiement_complet {
+  color: red; }
+
+@media only screen and (max-width: 480px) {
+  #dons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto; }
+
+  .don_parrainage {
+    width: 90%;
+    margin: 0 5%; }
+
+  .informations_personnel {
+    width: 90%;
+    margin: 100px 5%; }
+
+  #api_stripe {
+    width: 90%;
+    margin: 100px 5%; }
+
+  hr {
+    margin: 0 auto; }
+
+  form.bouton_stripe {
+    margin: 0 15%; }
+
+  body {
+    background-size: cover; } }
+
+/*# sourceMappingURL=page_don.css.map */
